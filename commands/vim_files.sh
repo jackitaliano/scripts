@@ -1,6 +1,6 @@
 #!/usr/bin/env $SHELL
 
-listDirsPath="/Users/jackitaliano/scripts/common/listDirs.sh"
+listDirsPath="$HOME/scripts/common/listDirs.sh"
 
 extensions=("py" "js" "cs" "c" "cpp" "sh" "jave" "json" "csv" "txt" "asm" "ts" "tf" "lua" "md")
 exclusions=("*/.git/" ".git" "*/.venv/*" ".DS_Store" "*/Library/*")

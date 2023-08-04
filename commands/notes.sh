@@ -3,7 +3,7 @@
 fileExtension=".md"
 quickNotePrefix="qn_"
 year=$(date +"%Y")
-notesFp="/Users/jackitaliano/notes/$year"
+notesFp="$HOME/notes/$year"
 quickNoteFp="$notesFp/quickNotes"
 
 nn() {

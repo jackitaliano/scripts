@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-listDirsPath="/Users/jackitaliano/scripts/common/listDirs.sh"
+listDirsPath="$HOME/scripts/common/listDirs.sh"
 
 rpf() {
 	RG_PREFIX="rg --column --line-number --no-heading --color=always --smart-case "
