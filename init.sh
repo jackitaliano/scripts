@@ -7,5 +7,3 @@ for f in $(find "$commandsDir" -type f -name "*.sh"); do
 		source "$f"
 	fi
 done
-
-echo ":)\n"

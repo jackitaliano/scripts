@@ -29,7 +29,7 @@ vhf() {
 
 	selected_dir=$(dirname "$selected_file")
 
-	if [ -n "$selected_dir" ] && [ "$selected_dir" != "." ]; then
+	if [ -n "$selected_dir" ] && [ $selected_file ]; then
 		cd "$selected_dir" && nvim "$selected_file"
 	fi
 }
@@ -41,8 +41,9 @@ vpf() {
 	selected_file=$(fzf --preview-window 'up,60%,border-bottom,+{2}+3/3,~3' --preview 'bat --color=always {1}' --bind shift-up:preview-page-up,shift-down:preview-page-down <<<"$files")
 
 	selected_dir=$(dirname "$selected_file")
+	echo $selected_dir
 
-	if [ -n "$selected_dir" ] && [ "$selected_dir" != "." ]; then
+	if [ -n "$selected_dir" ] && [ $selected_file ]; then
 		cd "$selected_dir" && nvim "$selected_file"
 	fi
 }
@@ -58,7 +59,7 @@ vcf() {
 
 	selected_dir=$(dirname "$selected_file")
 
-	if [ -n "$selected_dir" ] && [ "$selected_dir" != "." ]; then
+	if [ -n "$selected_dir" ] && [ $selected_file ]; then
 		cd "$selected_dir" && nvim "$selected_file"
 	fi
 }
@@ -74,7 +75,7 @@ vnf() {
 
 	selected_dir=$(dirname "$selected_file")
 
-	if [ -n "$selected_dir" ] && [ "$selected_dir" != "." ]; then
+	if [ -n "$selected_dir" ] && [ $selected_file ]; then
 		cd "$selected_dir" && nvim "$selected_file"
 	fi
 }

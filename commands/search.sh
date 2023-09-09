@@ -28,6 +28,14 @@ rpf() {
 		nvim "+$line_number" "$absolute_path"
 	fi
 }
+# rpf() {
+# 	QUERY=$1
+#
+# 	cwd=$(pwd)
+# 	files=$(fd -H $QUERY .)
+# 	file=$(fzf $files)
+# 	echo $file
+# }
 
 rhf() {
 	RG_PREFIX="rg --column --line-number --no-heading --color=always --smart-case "
